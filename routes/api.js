@@ -5,7 +5,7 @@ var express = require('express');
 var router = express.Router();
 
 router.get('/sayhello', function(req, res, next) {
-    res.send('HELLOOOOO DOCKERRR IMAGEEEE MICROSERVICE');
+    res.render('index', { title: 'Hello' });
 });
 
 module.exports = router;
